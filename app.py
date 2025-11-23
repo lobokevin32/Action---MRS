@@ -121,7 +121,7 @@ movie_choice = st.selectbox("🔍 Select Movie", [""] + list(movies["title"].val
 num_movies = st.slider("🎯 𝑵𝒖𝒎𝒃𝒆𝒓 𝒐𝒇 𝑹𝒆𝒄𝒐𝒎𝒎𝒆𝒏𝒅𝒂𝒕𝒊𝒐𝒏𝒔", 5, 25, 10, step=5)
 
 
-if st.button("🚀 🇬🇪🇳🇪🇷🇦🇹🇪 🇸🇺🇬🇬🇪🇸🇹🇮🇴🇳🇸"):
+if st.button("🚀 𝖦𝖤𝖭𝖤𝖱𝖠𝖳𝖤 𝖲𝖴𝖦𝖦𝖤𝖲𝖳𝖨𝖮𝖭𝖲"):
     results = recommend(movie_choice, num_movies)
 
     if not results:
@@ -165,3 +165,4 @@ if st.button("🚀 🇬🇪🇳🇪🇷🇦🇹🇪 🇸🇺🇬🇬🇪🇸🇹
         HTML += "</div>"
 
         components.html(HTML, height=1100, scrolling=True)
+
